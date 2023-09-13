@@ -1,0 +1,84 @@
+body{
+  background-color: rgb(21, 52, 119);
+  color: #f1f1f1;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+header {
+  /*background-color: rgb(250, 237, 220);*/
+  padding: 20px;
+  text-align: center;
+}
+/* Estilos para las subsecciones */
+#info-personal, #habilidades {
+  margin: 0px;
+  padding: 20px 20%;
+}
+#habilidades{
+  background-color: #f1f1f1;
+  color: black;
+}
+#info-personal{
+  background-color: rgb(94, 164, 255);
+}
+/* Estilos para los títulos de subsecciones */
+#info-personal h2, #habilidades h2 {
+  font-size: 24px;
+}
+/* Estilos para la lista de habilidades */
+#habilidades ul {
+  list-style-type: square;
+}
+/* Estilos para el footer */
+footer {
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding:  20px 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos básicos aquí (los mismos que antes) */
+/* Media Queries para hacer la página responsiva */
+/* Estilos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+/* Podemos ajustar el padding del encabezado y las subsecciones */
+  header, #info-personal, #habilidades {
+    padding: 10px 5%;
+  }
+/* Y también cambiar el tamaño de la fuente del título */
+
+  h2 {
+    font-size: 18px;
+  }
+
+  
+
+}
+/* Estilos para pantallas medianas (tabletas) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+/* Aquí podríamos mantener el padding del encabezado y las
+subsecciones igual */
+header, #info-personal, #habilidades {
+  padding: 20px 10%;
+}
+/* Pero quizás queremos que los títulos sean un poco más grandes que
+en móviles pero menores que en desktop */
+h2 {
+  font-size: 22px;
+  }
+}
+/* Estilos para pantallas grandes (desktops) */
+@media only screen and (min-width: 1025px) {
+/* Aquí podríamos aumentar el padding del encabezado y las
+subsecciones */
+header, #info-personal, #habilidades {
+  padding: 20px 15%;
+}
+/* Y hacer que los títulos sean más grandes */
+h2 {
+  font-size: 28px;
+  }
+}
